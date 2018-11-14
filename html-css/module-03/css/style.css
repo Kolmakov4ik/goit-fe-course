@@ -1,6 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i");
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300'); */
-
 * {
   margin: 0px;
   padding: 0px;
@@ -58,24 +55,35 @@ header {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
 .content-list {
-  margin-bottom: 50px;
+  font-size: 0px;
 }
 
 .content-list-item {
   display: inline-block;
   width: 420px;
   list-style: none;
-  margin-left: 56px;
+  font-size: 14px;
   margin-bottom: 120px;
 }
 
-.content-list-item:nth-child(odd) {
-  margin-left: 0px;
+.content-list-item:nth-of-type(odd) {
+  margin-right: 60px;
 }
 
 .content-list-item:nth-last-child(-n+2) {
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 .underimg {
@@ -106,16 +114,16 @@ img {
 }
 
 .btn {
-  width: 164px;
-  height: 60px;
-  background: white;
-  font-size: 20px;
-  color: #626262;
-  border: 1px solid #626262;
-  margin: 0 auto;
-  display: block;
   font-family: 'Playfair Display', serif;
+  font-size: 20px;
   font-weight: 400;
+  color: #626262;
+  background: white;
+  border: 1px solid #626262;
+  line-height: 1;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 33px;
 }
 
 .btn:hover {
