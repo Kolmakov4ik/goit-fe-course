@@ -85,7 +85,7 @@ header {
 }
 
 .content-list-item:nth-last-child(-n+2) {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .underimg {
@@ -124,7 +124,7 @@ img {
   border: 1px solid #626262;
   line-height: 1;
   display: block;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   padding: 20px 33px;
 }
 
