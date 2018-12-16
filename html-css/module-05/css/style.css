@@ -100,10 +100,8 @@ img {
 }
 
 .masthead {
-    margin: 0 auto;
     margin-bottom: 42px;
     padding-top: 42px;
-    width: 1140px;
 }
 
 .slider {
@@ -278,13 +276,18 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
-    padding: 80px 34px;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 .collection-list-item:hover > .overlay {
     opacity: 1;
     transition: 0.4s;
+    height: 286px;
+    border: 10px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.549);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .submenu-item {
@@ -318,8 +321,9 @@ img {
     background-position: center;
 }
 
-.submenu-item:hover {
+.submenu-icon:hover {
     background-color: #1abc9c;
+    border: none;
     transition: 0.4s;
 }
 
@@ -377,6 +381,7 @@ input[type='radio'].visually-hidden {
 }
   
 .footer a {
+    display: inline-block;
     text-decoration: none;
     color: #c8c8c8;
 }
