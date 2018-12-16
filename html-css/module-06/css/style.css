@@ -36,6 +36,16 @@ img {
 }
 .logo {
     display: inline-block;
+    text-decoration: none;
+}
+
+.logo-text {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #95e1d3;
+    line-height: 30px;
 }
 
 .menu {
@@ -306,6 +316,7 @@ img {
 
 .submenu-icon:hover {
     background-color: #95e1d3;
+    border: none;
 }
 
 .soc1 {
@@ -332,11 +343,11 @@ img {
 }
 
 .footer-text {
-    padding-top: 15px;
     flex-grow: 1;
 }
 
 .footer a {
+    display: inline-block;
     text-decoration: none;
     color: #484848;
 }
